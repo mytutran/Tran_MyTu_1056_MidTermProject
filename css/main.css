@@ -1,16 +1,17 @@
 @charset "UTF-8";
+
 a {
   text-decoration: none;
   cursor: pointer;
   font-family: 'Raleway', 'Arial', 'sans-serif';
   font-weight: 700;
   color: #273746;
-  font-size: 20px;
 }
 
 p {
   font-family: 'Raleway', 'Arial', 'sans-serif';
   font-weight: 400;
+  line-height: 25px;
 }
 
 img {
@@ -18,64 +19,194 @@ img {
   min-height: auto;
 }
 
+p .bold {
+  font-weight: 700;
+}
+
 .hidden {
   display: none;
 }
 
-#logo{
-  width: 450px;
-  margin: 0 auto;
+h2 {
+  font-family: 'Barlow Condensed', 'Arial', sans-serif;
+  color: #F1C40F;
+  font-weight: 600;
+  font-size: 50px;
+  margin: 0;
 }
 
-#mainNav {
+#mainHeader{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  text-align: center;
-  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 6px 15px -10px #273746;
+  -moz-box-shadow: 0 6px 15px -10px #273746;
+  box-shadow: 0 6px 15px -10px #273746;
 }
 
-nav ul {
-  display: block;
+#logo{
+  width: 30%;
+  margin: 50px;
 }
 
-nav ul li {
+#navBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#navBar li {
   display: inline-block;
 }
 
-nav a {
+#navBar a {
   display: block;
-  padding-top: 15px;
-  padding-right: 20px;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
+  padding-right: 50px;
+  font-size: 20px;
 }
 
 a:hover {
+  -moz-filter: opacity(40%);
   -webkit-filter: opacity(40%);
   filter: opacity(40%);
 }
 
-#wrapperHero {
-  margin-top: 60px;
+.mainButton {
+  width: 120px;
+  height: 40px;
+  border: 3px solid #F1C40F;
+  background-color: transparent;
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+  font-weight: 700;
+  font-size: 13px;
+  color: #FDFEFE;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.mainButton:hover {
+  background-color: #F1C40F;
+  position: relative;
+  }
+
+#sectionArea {
+  background: url("../images/background.jpg");
+}
+
+#mainFooter {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#mainFooter a {
+  padding: 10px;
+  font-size: 15px;
+}
+
+#mainFooter p {
+  color: #273746 ;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#footerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#socialMedia img {
+	width: 40px;
+	height: 40px;
+}
+
+#youtube, #twitter, #facebook {
+	padding-right: 5px;
+}
+
+#youtube a, #twitter a, #facebook a {
+	transition-duration: 1.5s;
+}
+
+#youtube:hover, #twitter:hover, #facebook:hover {
+  -moz-filter: opacity(80%);
+  -webkit-filter: opacity(80%);
+  filter: opacity(80%);
+}
+/* ON HOMEPAGE*/
+
+#promoArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#wrapperPromo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #heroImage {
-  position: relative;
+  -moz-filter: brightness(40%);
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
+  width: 100%;
 }
 
-#textHero {
-  position: absolute;
-  margin-bottom: 20px;
-}
-
-#promoHead {
-  font-family: 'Barlow Condensed', 'Arial', sans-serif;
-  color: #273746;
-  font-weight: 600;
-  font-size: 35px;
+#promoText {
   text-align: center;
-  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #fff;
+  box-sizing: content-box;
 }
+
+.sectionArea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#wrapperProduct {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 60px;
+}
+
+.textBox {
+  color: #F4F6F7;
+  text-align: center;
+  padding: 50px;
+  box-sizing: content-box;
+}
+
+#wrapperEvent {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 60px;
+}
+
+/*ON ABOUT*/
