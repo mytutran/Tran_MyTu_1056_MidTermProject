@@ -50,7 +50,7 @@ h2 {
   margin: 0;
 }
 
-#mainHeader{
+#mainHeader {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -65,29 +65,27 @@ h2 {
 #logo{
   width: 30%;
   margin: 50px;
-  display: absolute;
 }
 
 #logo a:hover {
   filter: opacity(100%);
   -moz-filter: opacity(100%);
   -webkit-filter: opacity(100%);
-
 }
 
-#navBar {
+#mainHeader ul, #mainFooter ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-#navBar li {
+#mainHeader li, #mainFooter li {
   display: inline-block;
 }
 
-#navBar a {
+#mainHeader a{
   display: block;
   transition-duration: 0.6s;
   padding-right: 50px;
@@ -349,6 +347,12 @@ a:hover {
   padding-top: 20px;
   line-height: 30px;
   color: #D0D3D4;
+}
+
+#mapArea iframe {
+  width: 450px;
+  height: 600px;
+  border: none;
 }
 
 #contactText {
