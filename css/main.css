@@ -44,6 +44,7 @@ h2 {
   -webkit-box-shadow: 0 6px 15px -10px #273746;
   -moz-box-shadow: 0 6px 15px -10px #273746;
   box-shadow: 0 6px 15px -10px #273746;
+  margin-bottom: 100px;
 }
 
 #logo{
@@ -53,7 +54,7 @@ h2 {
 
 #navBar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -68,6 +69,7 @@ h2 {
   transition-duration: 0.6s;
   padding-right: 50px;
   font-size: 20px;
+  margin: 5px;
 }
 
 a:hover {
@@ -94,8 +96,8 @@ a:hover {
   position: relative;
   }
 
-#sectionArea {
-  background: url("../images/background.jpg");
+#contentArea {
+  background: url("../images/background.jpg") 0 0 fixed;
 }
 
 #mainFooter {
@@ -103,7 +105,7 @@ a:hover {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 #mainFooter a {
@@ -154,8 +156,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 #wrapperPromo {
@@ -174,14 +174,13 @@ a:hover {
 #promoText {
   text-align: center;
   position: absolute;
-  color: #fff;
+  color: #D0D3D4;
   box-sizing: content-box;
 }
 
 .sectionArea {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
 }
 
 #wrapperProduct {
@@ -194,13 +193,12 @@ a:hover {
 }
 
 .textBox {
-  color: #F4F6F7;
+  color: #D0D3D4;
   text-align: center;
   padding: 50px;
-  box-sizing: content-box;
 }
 
-#wrapperEvent {
+#wrapperEventHome {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -210,3 +208,73 @@ a:hover {
 }
 
 /*ON ABOUT*/
+#storyArea {
+  background: url("../images/background_about.jpg") 0 0 fixed;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#storyArea h2{
+  margin-bottom: 50px;
+}
+
+#wrapperStory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.storyBox {
+  border: solid 3px #F1C40F;
+  text-align: center;
+  color: #D0D3D4;
+  width: 400px;
+  padding: 20px;
+  margin: 50px;
+}
+
+/*ON EVENTS*/
+#wrapperEvent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#event1, #event2, #event3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+#event1, #event3 {
+  background: url("../images/background_events13.jpg") 0 0 fixed;
+}
+
+#event2 {
+  background: url("../images/background_events2.jpg") 0 0 fixed;
+}
+
+#event1 p, #event1 a {
+  color: #D0D3D4;
+}
+
+#event2 p, #event2 h2 {
+  color: #273746;
+}
+
+#event3 {
+    color: #D0D3D4;
+}
+.eventBox {
+  text-align: left;
+  padding: 30px;
+  width: 50%;
+}
