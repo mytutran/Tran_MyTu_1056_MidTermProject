@@ -1,5 +1,20 @@
 @charset "UTF-8";
+/* ANIMATION */
 
+.beerCup {
+  position: relative;
+  bottom: 40px;
+  animation: pop 0.5s 1;
+}
+
+@keyframes pop {
+  0%{ transform: scale(1)}
+  50%{ transform: scale(1.0)}
+  70%{ transform: scale(1.5)}
+  100%{ transform: scale(1)}
+}
+
+/* PRESETS */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -50,6 +65,7 @@ h2 {
 #logo{
   width: 30%;
   margin: 50px;
+  display: absolute;
 }
 
 #logo a:hover {
@@ -415,7 +431,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  width: 42%
+  width: 42%;
 }
 
 .beerDescription h2 {
