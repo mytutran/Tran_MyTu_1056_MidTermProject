@@ -12,7 +12,10 @@
       <main>
         <header id=mainHeader>
           <h1 class="hidden">Welcome To Strathroy Brewing Company</h1>
-          <div id="logo"><img src="images/logo.svg" alt="Logo"></div>
+          <div id="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Logo"></a>
+          </div>
             <nav>
               <h2 class="hidden">Main Navigation</h2>
               <ul>
@@ -26,7 +29,45 @@
               </ul>
             </nav>
         </header>
-
+        <section class="sectionArea">
+          <div id="wrapperContact">
+            <div id="hoursArea">
+              <h2>FIND US RIGHT HERE</h2>
+              <p><span class="bold">Address:</span><br>
+                  62 Albert Street<br>
+                  Strathroy, Ontario, Canada<br>
+                  N7G 1V5<br>
+                  <span class="bold">Sales Desk:</span><br>
+                  226-238-1815<br>
+                  <span class="bold">Retail Hours:<br></span>
+                  Thursday 12pm-6pm<br>
+                  Friday 12pm-6pm<br>
+                  Saturday 11am-4pm</p>
+            </div>
+            <div id="mapArea">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.0895159450906!2d-81.62566104846553!3d42.955317979049035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f04178a238a99%3A0x7efa8187ae99a966!2sStrathroy%20Brewing%20Company!5e0!3m2!1sen!2sca!4v1581305638258!5m2!1sen!2sca" width="450" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div id="contactText">
+              <h2>HAVE A QUESTION FOR US?</h2>
+              <p>Send us a message, we will make sure to get back to you as soon as possible!</p>
+            </div>
+            <form id="contactForm" action="form.php" method="post">
+                    <h2 class="hidden">Contact Form</h2>
+                    <label>Name*</label><br>
+                    <div id=nameGroup>
+                        <input type="text" required class="inputBox" id="firstName" placeholder="First Name">
+                        <input type="text" required class="inputBox" name="lastName" placeholder="Last Name">
+                    </div>
+                   <label>Email Address*</label><br>
+                   <input type="email" required class="inputBox" name="email"><br>
+                   <label>Subject*</label><br>
+                   <input type="text" required class="inputBox"><br>
+                   <label>Message*</label><br>
+                   <textarea required class="textArea"></textarea><br>
+                  <button class="mainButton" onclick="#">SUBMIT</button>
+              </form>
+          </div>
+        </section>
         <footer id="mainFooter">
           <div id="footerWrapper">
             <div><nav>

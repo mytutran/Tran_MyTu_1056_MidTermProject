@@ -52,6 +52,13 @@ h2 {
   margin: 50px;
 }
 
+#logo a:hover {
+  filter: opacity(100%);
+  -moz-filter: opacity(100%);
+  -webkit-filter: opacity(100%);
+
+}
+
 #navBar {
   display: flex;
   justify-content: space-around;
@@ -211,9 +218,21 @@ a:hover {
 #storyArea {
   background: url("../images/background_about.jpg") 0 0 fixed;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+#briefBox {
+  display: flex;
+  justify-content: center;
+  color: #D0D3D4;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+  padding: 80px;
+}
+
+
+#briefBox p {
+  text-align: left;
 }
 
 #storyArea h2{
@@ -238,6 +257,21 @@ a:hover {
 }
 
 /*ON EVENTS*/
+#eventsText {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+#eventsText h2 {
+  color: #18242D;
+  font-size: 100px;
+  -moz-filter: drop-shadow(8px 0px #F1C40F);
+  -webkit-filter: drop-shadow(8px 0px #F1C40F);
+  filter: drop-shadow(8px 0px #F1C40F);
+}
+
 #wrapperEvent {
   display: flex;
   justify-content: center;
@@ -277,4 +311,171 @@ a:hover {
   text-align: left;
   padding: 30px;
   width: 50%;
+}
+
+/* ON CONTACT */
+#wrapperContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  background: url("../images/background_contact.jpg") 0 0 fixed;
+}
+
+#hoursArea, #mapArea, #contactText, #contactForm {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#hoursArea p {
+  padding-top: 20px;
+  line-height: 30px;
+  color: #D0D3D4;
+}
+
+#contactText {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#contactText p {
+  color: #D0D3D4;
+}
+
+#contactForm {
+  color: #D0D3D4;
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#contactForm input {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  font-family: 'Raleway', 'Arial', 'sans-serif';
+}
+
+#contactForm textarea {
+  width: 450px;
+  height: 100px;
+}
+
+#nameGroup {
+  margin-bottom: 10px;
+}
+
+/* ON OURBEERS */
+.bigSpan {
+  font-size: 70px;
+}
+
+.lightSpan {
+  font-weight: 300;
+}
+
+#wrapperBeer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#beerText {
+  background-color: #18242D;
+  padding: 40px;
+  color: #D0D3D4;
+  margin-bottom: 0px;
+}
+
+#beerBox1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #f3c027;
+}
+
+#beerImage1 {
+  background-color: #2d8682;
+  padding: 0px;
+}
+
+.beerDescription {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 42%
+}
+
+.beerDescription h2 {
+  color: #18242D;
+  margin-bottom: 60px;
+}
+
+.beerDescription p {
+  font-weight: 500;
+}
+
+
+.circleBorder {
+  border-radius: 100%;
+  border: 3.2px solid #18242D;
+  font-family: 'Barlow Condensed', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: #18242D;
+  margin-right: 40px;
+}
+
+.wrapperCircle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+
+#beerBox2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #cbcbcb;
+}
+
+#beerImage2 {
+  background-color: #000;
+  padding: 0px;
+}
+
+#beerBox3 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #2d8682;
+}
+
+#beerImage3 {
+  background-color: #f3c027;
+  padding: 0px;
 }
